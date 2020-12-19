@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CONCEPTarray</title>
+    </head>
+    <body>
+        <center>
+            <h1>Fruits</h1>
+            <h4 id="fruita"></h4>
+            <hr>
+            <h1>FIRST FRUIT IN ARRAY</h1>
+            <h4 id="fruitb"></h4>
+            <hr>
+            <h1>Length of array</h1>
+            <h4 id="fruitc"></h4>
+            <hr>
+            
+            <h1>for loop</h1>
+            <h4 id="fruitf"></h4>
+            <hr>
+            <h1>ADD to ARRAY</h1>
+        
+            <h4 id="fruitd"></h4>
+            <hr>
+            <h1>REMOVE from ARRAY</h1>
+            <h4 id="fruite"></h4>
+            <hr>
+            <h1>alphabets</h1>
+            <h4 id="alphabeta"></h4>
+            <hr>
+            <h1>alphabets in reverse</h1>
+            <h4 id="alphabetb"></h4>
+            <hr>
+            <h1>sort alphabets</h1>
+            <h4 id="alphabetc"></h4>
+            <hr>
+            <h1>numbers</h1>
+            <h4 id="numbera"></h4>
+            <hr>
+            <h1>max numbers</h1>
+            <h4 id="numberb"></h4>
+            <hr>
+            <h1>min numbers</h1>
+            <h4 id="numberc"></h4>
+        </center>
+    </body>
+    <script>
+var a=["apple","orange","banana","kiwi"];
+console.log(a);
+document.getElementById("fruita").innerHTML=a;
+var b=a[0];
+console.log(b);
+document.getElementById("fruitb").innerHTML=b;
+var c=a.length;
+console.log(c);
+document.getElementById("fruitc").innerHTML=c;
+var h="";
+for(i=0; i<a.length; i++){
+    console.log(a[i]);
+    h=h+a[i]+"<br>";
+}
+console.log(h);
+document.getElementById("fruitf").innerHTML=h;
+a.push("guava");
+console.log(a);
+document.getElementById("fruitd").innerHTML=a;
+a.pop("guava");
+console.log(a);
+document.getElementById("fruite").innerHTML=a;
+var d=["a","b","c","d","e","f","g","h"];
+console.log(d);
+document.getElementById("alphabeta").innerHTML=d;
+d.reverse();
+console.log(d);
+document.getElementById("alphabetb").innerHTML=d;
+d.sort();
+console.log(d);
+document.getElementById("alphabetc").innerHTML=d;
+var e=["1","2","3","4","5","6","7","8","9","0"];
+console.log(e);
+document.getElementById("numbera").innerHTML=e;
+var f=Math.max.apply(Math,e);
+console.log(f);
+document.getElementById("numberb").innerHTML=f;
+var g=Math.min.apply(Math,e);
+console.log(g);
+document.getElementById("numberc").innerHTML=g;
+    </script>
+</html>
